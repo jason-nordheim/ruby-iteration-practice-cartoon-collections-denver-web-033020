@@ -2,7 +2,7 @@ def roll_call_dwarves dwarves
   i = 0
   while i < dwarves.count do
     puts "#{i + 1}. #{dwarves[i]}"
-    i += 1  
+    i += 1
   end
 end
 
