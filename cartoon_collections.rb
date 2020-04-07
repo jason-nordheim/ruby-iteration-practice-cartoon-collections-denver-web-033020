@@ -16,8 +16,14 @@ end
 
 def find_the_cheese cheese
   cheese_types = ["cheddar", "gouda", "camembert"]
-  cheese.each do |ch|
-    p cheese_types.find { |x| x == ch; x }
+  i = 0
+  while i < cheese.count do
+    j = 0
+    while j < cheese_types.count do
+      if cheese[i] == cheese_types[j]
+        return cheese[i]
+      end
+    end
+    i += 1
   end
-  nil
 end
