@@ -10,8 +10,8 @@ def summon_captain_planet veggies
   veggies.map { |x| x.capitalize + "!"  }
 end
 
-def long_planeteer_calls calls_long 
-  # Your code here
+def long_planeteer_calls calls_long
+  calls_long.any? { |x| x.count > 4  }
 end
 
 def find_the_cheese# code an argument here
