@@ -23,6 +23,7 @@ def find_the_cheese cheese
       if cheese[i] == cheese_types[j]
         return cheese[i]
       end
+      j += 1 
     end
     i += 1
   end
