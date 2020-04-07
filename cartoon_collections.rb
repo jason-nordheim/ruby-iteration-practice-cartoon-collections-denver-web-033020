@@ -17,7 +17,7 @@ end
 def find_the_cheese cheese
   cheese_types = ["cheddar", "gouda", "camembert"]
   cheese.each do |ch|
-    p cheese_types.find { |x| x == cheese; x }
+    p cheese_types.find { |x| x == ch; x }
   end
   nil
 end
